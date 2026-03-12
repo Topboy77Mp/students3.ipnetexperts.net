@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSec Elite - Portfolio des Experts en Cybersécurité</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Matrix Background Animation -->
+    <div class="matrix-bg"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">&lt;CyberSec/&gt;</span>
+                <span class="logo-sub">Elite Squad</span>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link active">Accueil</a>
+                <a href="#profiles" class="nav-link">Profils</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="typing">Elite Cybersecurity Professionals</span>
+                </h1>
+                <p class="hero-subtitle">Défenseurs de la sécurité numérique</p>
+                <div class="hero-scan-line"></div>
+                <button class="cta-button" onclick="document.getElementById('profiles').scrollIntoView({ behavior: 'smooth' })">
+                    Découvrir nos experts
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profiles Section -->
+    <section id="profiles" class="profiles-section">
+        <div class="container">
+            <h2 class="section-title">Nos Experts</h2>
+            <div class="profiles-grid">
+                <!-- Profile 1: Patrick -->
+                <div class="profile-card" data-profile="patrick">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="profile-image-container patrick-bg">
+                            <img src="images/patrick.jpg" alt="Patrick - Pentest Expert" class="profile-image">
+                        </div>
+                        <h3 class="profile-name">Patrick</h3>
+                        <p class="profile-role">Pentest & Exploit Developer</p>
+                        <p class="profile-desc">Expert en tests de pénétration avancés, reverse engineering et développement d'exploits. Spécialisé en vulnérabilités zero-day et sécurité des applications web critiques.</p>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">12+</span>
+                                <span class="stat-label">Ans d'expérience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Vulnérabilités trouvées</span>
+                            </div>
+                        </div>
+                        <button class="btn-details" onclick="showModal('patrick')">Voir détails</button>
+                    </div>
+                </div>
+
+                <!-- Profile 2: Hannielle -->
+                <div class="profile-card" data-profile="hannielle">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="profile-avatar hannielle-avatar">H</div>
+                        <h3 class="profile-name">Hannielle</h3>
+                        <p class="profile-role">Incident Response & Forensics</p>
+                        <p class="profile-desc">Spécialiste en réponse aux incidents, analyse forensique et threat hunting. 10+ ans d'expérience dans l'investigation de cyberattaques complexes et la récupération de données.</p>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Ans d'expérience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">200+</span>
+                                <span class="stat-label">Incidents investigués</span>
+                            </div>
+                        </div>
+                        <button class="btn-details" onclick="showModal('hannielle')">Voir détails</button>
+                    </div>
+                </div>
+
+                <!-- Profile 3: Jonas -->
+                <div class="profile-card" data-profile="jonas">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="profile-avatar jonas-avatar">J</div>
+                        <h3 class="profile-name">Jonas</h3>
+                        <p class="profile-role">Infrastructure Security & DevSecOps</p>
+                        <p class="profile-desc">Expert en sécurisation d'infrastructure cloud, containerisation sécurisée et automation DevSecOps. Pionnier dans la mise en place de politiques zero-trust.</p>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label">Ans d'expérience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Infrastructure sécurisées</span>
+                            </div>
+                        </div>
+                        <button class="btn-details" onclick="showModal('jonas')">Voir détails</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Compétences Techniques</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Pentest & Exploitation</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-icon">▸</span>Burp Suite Pro</li>
+                        <li><span class="skill-icon">▸</span>Metasploit Framework</li>
+                        <li><span class="skill-icon">▸</span>GDB & Reverse Engineering</li>
+                        <li><span class="skill-icon">▸</span>Python & Assembly</li>
+                        <li><span class="skill-icon">▸</span>Web App Security (OWASP)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Forensics & Incident Response</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-icon">▸</span>Digital Forensics (DFIR)</li>
+                        <li><span class="skill-icon">▸</span>Volatility & Memory Analysis</li>
+                        <li><span class="skill-icon">▸</span>Wireshark & Network Analysis</li>
+                        <li><span class="skill-icon">▸</span>Splunk & SIEM</li>
+                        <li><span class="skill-icon">▸</span>Threat Hunting</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Infrastructure & Cloud Security</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-icon">▸</span>Kubernetes & Docker</li>
+                        <li><span class="skill-icon">▸</span>Terraform & IaC</li>
+                        <li><span class="skill-icon">▸</span>AWS / Azure / GCP</li>
+                        <li><span class="skill-icon">▸</span>Linux Hardening</li>
+                        <li><span class="skill-icon">▸</span>Zero Trust Architecture</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Frameworks</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-icon">▸</span>Kali Linux</li>
+                        <li><span class="skill-icon">▸</span>Git & Bash Scripting</li>
+                        <li><span class="skill-icon">▸</span>Nmap & Nessus</li>
+                        <li><span class="skill-icon">▸</span>SSL/TLS & Cryptography</li>
+                        <li><span class="skill-icon">▸</span>OSINT & Reconnaissance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications-section">
+        <div class="container">
+            <h2 class="section-title">Certifications & Accréditations</h2>
+            <div class="certs-grid">
+                <div class="cert-item">
+                    <span class="cert-badge">CEH</span>
+                    <p>Certified Ethical Hacker</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-badge">OSCP</span>
+                    <p>Offensive Security Certified Professional</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-badge">GCIH</span>
+                    <p>GIAC Certified Incident Handler</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-badge">CKAD</span>
+                    <p>Certified Kubernetes Application Developer</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-badge">CCNA</span>
+                    <p>Cisco Certified Network Associate</p>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-badge">CISSP</span>
+                    <p>Certified Information Systems Security Professional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Nous Contacter</h2>
+            <div class="contact-content">
+                <p>Intéressé par nos services en cybersécurité ?</p>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Detail -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CyberSec Elite. All rights reserved.</p>
+            <p>Portfolio professionnel - Projet académique</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
